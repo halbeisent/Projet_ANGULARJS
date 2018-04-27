@@ -123,8 +123,8 @@
   <div class="container nous" id="weAre">
     <h1>Qui sommes nous ?</h1>
     <p>Custom Computer est la référence des produits pc dans le monde !</p>
-    <p>Le concept est de vous proposer les meilleurs nouveautés possible concernant les composants pc pour toujours être à la page.</p>
-    <p>Passionnés d'informatique, nous cherchons a vous proposer le meilleur service possible en terme de proposition, de vente, de montage et de service après vente.</p>
+    <p>Le concept est de vous proposer les meilleures nouveautés possible concernant les composants pc pour toujours être à la page.</p>
+    <p>Passionnés d'informatique, nous cherchons à vous proposer le meilleur service possible en terme de proposition, de vente, de montage et de service après vente.</p>
     <p>Après de nombreuses années à chercher les perles rares chacun de notre coté, nous avons décidé de mettre en commun nos connaissances pour chercher, trouver et vous vendre les composants les plus "HYPE" de la planète informatique.</p>
     <p>Sur notre <strong>site</strong>, vous trouverez tous les composants les plus prisés, à des prix incroyables!</p>
     <p><strong>Faites confiance à une équipe de passionnés !</strong></p>
@@ -139,7 +139,7 @@
     <div ng-repeat="model in products | filter: {prodCat: catFilter}" ng-grid><!-- début de div ng-repeat pour conserver proportion -->
       <!--Card avec ng-repeat dessus-->
       <div class="card"><!-- debut div card-->
-        <span class="badge badge-light"><p>{{model.prodCat}}</p></span>
+        <p class="categorie">{{model.prodCat | uppercase}}</p>
         <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
         <div class="card-body">
           <p class="card-text prodName">{{model.prodName}}</p>

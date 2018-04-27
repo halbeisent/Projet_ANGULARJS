@@ -12,6 +12,12 @@ body {
   max-height: 58px;
 }
 
+.categorie{
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #86805e;
+}
+
 .card-img-top {
   max-height: 268px;
   max-width: 268px
@@ -122,8 +128,7 @@ body {
 
 /* NAVBAR________________________________________________________________________*/
 #ShoesAddictedIcon {
-  width: 40px;
-  padding-bottom: 20px;
+  width: 30px;
 }
 
 /* CSS du MODAL _______________________________________________________________________*/
