@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- CSS de W3S -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Underscore.js pour gerer le cart -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.0/underscore-min.js"></script>
+  <!-- fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP + ANGULARSJS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Pavanam" rel="stylesheet">
+  <link rel="icon" href="assets/images/computericon.png">
+  <title>ShoesAddicted</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js"></script>
+</head>
+<body ng-app="shoesApp" ng-controller="shoesCtrl">
+  <!-- Création de la navbar fixed top -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
+    <img id="ShoesAddictedIcon" src="assets/images/computericon.png" alt="logo" />
+    <a class="navbar-brand brandText" href="#"> ShoesAddicted </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+        <!-- Création dropdown pour les produits -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">LA BOUTIQUE</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" id="navAll" href="#shopName" ng-click="catFilter = ''">Toutes les marques</a>
+            <a class="dropdown-item" id="navAdidas" href="#shopName" ng-click="catFilter = 'Adidas'">Adidas</a>
+            <a class="dropdown-item" id="navNike" href="#shopName" ng-click="catFilter = 'Nike'">Nike</a>
+            <a class="dropdown-item" id="navPuma" href="#shopName" ng-click="catFilter = 'Puma'">Puma</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#weAre">Qui sommes nous ?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#payment">Suivez-Nous</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <a class="nav-link" href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-arrow-circle-right"></i> {{totalQty()}} Shoes <i class="fas fa-shopping-cart"></i></a><!-- Panier ouvrant le modal -->
+      </span>
+    </div>
+  </nav> <!-- fin de la navbar -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><!-- début div Modal -->
+    <div class="modal-dialog modal-lg" role="document"><!--début du modal-dialog-->
+      <div class="modal-content"><!--début du modal-content-->
+        <div class="modal-header"><!--début du modal-header-->
+          <h5 class="modal-title" id="exampleModalLabel">Mon panier</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><!-- fin du modal-header-->
+        <div class="modal-body"><!--début du modal-body-->
+
+          <div class="container"><!-- début du div container -->
+            <div class="row"><!-- début du div row -->
+              <div class="col align-self-end"><!-- début du div col -->
+                <div class="table-responsive-sm"><!-- New ! Div Table responsive -->
+                  <table class="table table-hover"><!-- début de table -->
+                    <thead class="thead-dark">
+                      <tr>
+                        <th class="text-left align-middle">Référence</th>
+                        <th class="text-left align-middle">Désignation</th>
+                        <th class="text-right align-middle">Quantité</th>
+                        <th class="text-right align-middle">Prix Unitaire</th>
+                        <th class="text-right align-middle">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Début du Tr a répéter via ng-repeat pour le CART-->
+                      <tr ng-repeat="model in cart">
+                        <td class="text-left align-middle">{{model.prodRef}}</td>
+                        <td class="text-left align-middle">{{model.prodName}}</td>
+                        <td class="text-right align-middle"><i ng-click="removeItem(model)" class="far fa-trash-alt trash"></i> <input type="number" ng-model="model.qtyCart" class="qty" min="0" max="99" /></td>
+                        <td class="text-right align-middle">{{model.prodPrice | currency : '€'}}</td>
+                        <td class="text-right align-middle">{{getCost(model) | currency : '€'}}</td>
+                      </tr>
+                      <!-- fin du Tr -->
+                      <tr>
+                        <td colspan ="3" class="text-right align-middle"></td>
+                        <td class="text-right align-middle">Total du panier</td>
+                        <td class="text-right align-middle">{{getTotal() | currency : '€'}}</td>
+                      </tr>
+                    </tbody>
+                  </table> <!-- fin de table -->
+                </div><!-- fin de div table responsive -->
+              </div><!--Fin du div col -->
+            </div><!--Fin du div row -->
+          </div> <!-- Fin du div container fluid -->
+
+        </div><!--fin du modal-body-->
+        <div class="modal-footer"><!-- debut du modal-footer-->
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Continuer</button>
+          <button type="button" class="btn btn-sm btn-primary">PAIEMENT</button>
+        </div><!-- fin du modal-footer-->
+      </div><!-- fin du modal-content-->
+    </div><!--fin du modal-dialog-->
+  </div><!-- fin div Modal -->
+  <!-- fin du Modal -->
+
+  <!--Class container pour le parallax-->
+  <div class="container parallax01 text-center align-middle"><!--début container entre image et nous-->
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">CHOOSE</span> my SHOES</span>
+    </div>
+  </div>
+  <!--Fin container entre image et nous-->
+  <div class="container nous" id="weAre">
+    <h1>Qui sommes nous ?</h1>
+    <p>ShoesAddicted est tout simplement le site de référence de la sneakers</p>
+    <p>L'idée de base était de faire découvrir et vendre les plus beaux modèle de sneakers existants sur la boule bleu.</p>
+    <p>Conçu et développé par 3 amis passionnés de la chaussure en tout genre, nous avons décidé de faire de notre passion un métier à part entière.</p>
+    <p>Après de nombreuses années à chercher les perles rares chacun de notre coté, nous avons décidé de mettre en commun nos connaissances pour chercher, trouver et vous vendre les sneakers les plus "bankable" de la planète sneakers.</p>
+    <p>Sur notre <strong>site</strong>, vous trouverez les modèles de chaussures les plus prisés, à des prix incroyables!</p>
+    <p><strong>Faites confiance à une équipe de passionnés !</strong></p>
+  </div><!-- Fin de la div class nous -->
+
+  <!-- div de transition -->
+  <div class="container parallax01 text-center align-middle"></div>
+
+  <div class="container-fluid text-center align-middle" id="shopName"><p>La Boutique</p></div>
+
+  <div class="container-fluid flexing">
+    <div ng-repeat="model in products | filter: {prodCat: catFilter}" ng-grid><!-- début de div ng-repeat pour conserver proportion -->
+      <!--Card avec ng-repeat dessus-->
+      <div class="card"><!-- debut div card-->
+        <span class="badge badge-light"><img src="{{model.prodLogo}}" alt="logo" /></span>
+        <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
+        <div class="card-body">
+          <p class="card-text prodName">{{model.prodName}}</p>
+          <p>{{model.prodPrice | currency: '€'}}</p>
+          <p class="card-text ref prodRef">Ref: {{model.prodRef}}</p>
+          <a href="#{{model.prodName}}" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-class="desc" data-trigger="focus">Description du produit</a>
+          <button ng-init="model.qtyCart" ng-click="addItem(model)" type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Ajouter au panier
+          </button>
+        </div>
+      </div><!-- fin div card-->
+      <!-- Fin de la card -->
+    </div><!-- fin de div ng-repeat-->
+  </div>
+
+  <!-- div de transition -->
+  <div class="container parallax01 text-center align-middle"></div>
+
+  <footer>
+    <div class="container" id="payment">
+      <p class="titleContact"><strong>Suivez-nous</strong></p>
+          <p class="footLi"><a href="#">GitHub <i class="fab fa-github"></i></a></p>
+          <p class="footLi"><a href="#">Facebook <i class="fab fa-facebook"></i></a></p>
+          <p class="footLi"><a href="#">Instagram <i class="fab fa-instagram"></i></a></p>
+          <p class="footLi"><a href="#">YouTube <i class="fab fa-youtube"></i> </a></p>
+    </div>
+    <div class="container">
+      <p class="paymentOptions"><i class="fab fa-cc-mastercard payLogos"></i> <i class="fab fa-cc-visa payLogos"></i> <i class="fab fa-cc-paypal payLogos"></i> <i class="fab fa-bitcoin payLogos"></i></p>
+      <p class="paymentOptions"> Copyright (c) 2018 Thibault Halbeisen, Jonathan Marandeau, Anousone Mounivongs All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

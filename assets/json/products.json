@@ -1,0 +1,122 @@
+[
+  {
+    "prodRef": "WD8001FFWX",
+    "prodName": "Western Digital Red Pro - 8 To",
+    "prodDesc": "Créée tout particulièrement pour les clients PME, la gamme WD Red vient de s'enrichir avec les modèles WD Red Pro qui sont disponibles pour les environnements NAS de taille moyenne ou large avec 8 à 16 baies.",
+    "prodCat": "hdd",
+    "prodPrice": 320,
+    "prodPic": "assets/images/westerndigital.jpg",
+    "prodLogo": "assets/images/hddlogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "ST4000DM006",
+    "prodName": " Seagate BarraCuda Pro - 4 To",
+    "prodDesc": "Une fiabilité à toute épreuve fondée sur plus de 20 ans d'innovation de la gamme BarraCuda. Un mélange flexible de capacité et de prix adapté à tous les budgets. La technologie de mise en mémoire cache multi niveau garantit d'excellentes performances.",
+    "prodCat": "hdd",
+    "prodPrice": 180,
+    "prodPic": "assets/images/seagatebarracudapro.jpg",
+    "prodLogo": "assets/images/hddlogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "MZ-76E4T0B/EU",
+    "prodName": "Samsung 860 EVO - 4 To",
+    "prodDesc": "Le SSD Samsung 860 EVO bénéficie d'une comptabilité renforcée lui procurant des gains en vitesses et performances. Le nouveau contrôleur MJX communique plus efficacement avec le système hôte, y compris avec les systèmes Linux pour lesquels la compatibilité a été améliorée. Il est également suffisamment puissant pour gérer la mémoire de stockage des stations de travail.",
+    "prodCat": "hdd",
+    "prodPrice": 1280,
+    "prodPic": "assets/images/samsung860evo.jpg",
+    "prodLogo": "assets/images/hddlogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "WDBUZG5000ABK",
+    "prodName": "Western Digital Elements - 500 Go",
+    "prodDesc": "Sauvegardez et transportez facilement tous vos fichiers, photos, vidéos avec ce disque dur externe WD Elements !",
+    "prodCat": "hdd",
+    "prodPrice": 63,
+    "prodPic": "assets/images/wdelements.jpg",
+    "prodLogo": "assets/images/hddlogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "MSI-N108TTRIO-11GD",
+    "prodName": "MSI GTX 1080 Ti - 11 Go",
+    "prodDesc": "MSI propose sa nouvelle arme de gaming extrême : la MSI GeForce GTX 1080 Ti Gaming X TRIO ! Première Gaming X avec trois ventilateurs, cette carte graphique MSI dédiée aux amateurs de gaming en 4K sera votre compagnon de jeu idéal ! Soyez prêts pour le futur du jeu et pour la Réalité Virtuelle !",
+    "prodCat": "gpu",
+    "prodPrice": 1000,
+    "prodPic": "assets/images/msi1080ti.jpg",
+    "prodLogo": "assets/images/gpulogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "GV-N107TAORUS-8GD",
+    "prodName": "Gigabyte GTX 1070Ti AORUS - 8 Go ",
+    "prodDesc": "Découvrez la carte graphique haut de gamme Gigabyte GTX 1070 Ti Aorus ! Destinée à truster les podiums de la performance, la GTX 1070 Ti débarque avec fracas et va faire défiler les FPS en haute définition et en 4K ! La carte graphique GTX 1070 Ti construite autour de la nouvelle architecture NVIDIA Pascalaffiche des caractéristiques extrêmes qui feront le bonheur de tous les joueurs PC avides de performances ! Soyez prêts pour le futur du jeu et pour la Réalité Virtuelle !",
+    "prodCat": "gpu",
+    "prodPrice": 560,
+    "prodPic": "assets/images/gigabyte1070ti.jpg",
+    "prodLogo": "assets/images/gpulogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "11276-00-40G",
+    "prodName": " Sapphire Radeon RX Vega 56 Limited Edition - 8G",
+    "prodDesc": "Avec la Sapphire Nitro+ Radeon RX Vega 56 Limited Edition, les cartes graphiques équipées en Vega 56 personnalisées arrivent ! Le savoir-faire de la marque s'exprime via l'overclocking d'usine, le refroidissement custom et sa chambre à vapeur lui permettant d'offrir une fréquence boostée jusqu'à 1611 MHz. Une expérience de jeu extrême vous attend !",
+    "prodCat": "gpu",
+    "prodPrice": 710,
+    "prodPic": "assets/images/sapphireradeonrxlimited.jpg",
+    "prodLogo": "assets/images/gpulogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "11265-09-20G",
+    "prodName": "Sapphire Radeon RX 580 Pulse OC - 4 Go",
+    "prodDesc": "Voici les nouvelles cartes graphiques AMD Radeon RX 580 (11265-09) ! Sapphire nous présente ici sa nouvelle Radeon RX 580 Pulse OC 4 Go ! Cette RX 580 haut de gamme de la gamme RX série 500 débarque avec un double refroidissement exclusif Sapphire  Dual-X encore plus efficace et plus silencieux !",
+    "prodCat": "gpu",
+    "prodPrice": 340,
+    "prodPic": "assets/images/sapphireradeonrxpulse.jpg",
+    "prodLogo": "assets/images/gpulogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "BX80673I97980X",
+    "prodName": "Intel Core i9 7980XE Extreme Edition",
+    "prodDesc": "Avec la génération de processeurs Skylake X, Intel met à votre disposition une architecture ultra-moderne et puissante, de quoi se régaler avec des possibilités d'overclocking. Profitez d'une plateforme technologique haute performance grâce à une finesse de gravure 14 nanomètres, une fréquence mémoire DDR4 revue à la hausse (2666 MHz) et une rapidité en mode turbo toujours plus élevée.",
+    "prodCat": "cpu",
+    "prodPrice": 1950,
+    "prodPic": "assets/images/corei9extreme.jpg",
+    "prodLogo": "assets/images/cpulogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "BX80684I78700",
+    "prodName": "Intel Core i7 8700",
+    "prodDesc": "La 8ème génération de processeurs Intel s'appuie sur une plateforme éprouvée, moderne, polyvalente et terriblement puissante toujours sur le socket 1151.",
+    "prodCat": "cpu",
+    "prodPrice": 300,
+    "prodPic": "assets/images/corei7.jpg",
+    "prodLogo": "assets/images/cpulogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "YD270XBGAFBOX",
+    "prodName": "Amd Ryzen 7 2700X",
+    "prodDesc": "Avec la génération de processeurs Ryzen Zen+, AMD développe et complète sa gamme avec des CPU résolument haut de gamme orientés gaming.",
+    "prodCat": "cpu",
+    "prodPrice": 330,
+    "prodPic": "assets/images/amdryzen.jpg",
+    "prodLogo": "assets/images/cpulogo.png",
+    "qtyCart": 1
+  },
+  {
+    "prodRef": "BX80677I57640X",
+    "prodName": "Intel Core i5 7640X",
+    "prodDesc": "La génération de processeurs Intel Kaby Lake X s'appuie sur une plateforme éprouvée, moderne, polyvalente et terriblement puissante. Grâce à une finesse de gravure en 14 nanomètres associée à une faible consommation électrique et une dissipation thermique encore améliorée, le processeur Intel Core i5-7640X optimise le potentiel de votre PC.",
+    "prodCat": "cpu",
+    "prodPrice": 240,
+    "prodPic": "assets/images/intelcorei5.jpg",
+    "prodLogo": "assets/images/cpulogo.png",
+    "qtyCart": 1
+  }
+]
