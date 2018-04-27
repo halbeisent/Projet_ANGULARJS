@@ -18,7 +18,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Pavanam" rel="stylesheet">
   <link rel="icon" href="assets/images/computericon.png">
-  <title>ShoesAddicted</title>
+  <title>CC</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="assets/js/script.js"></script>
 </head>
@@ -26,7 +26,7 @@
   <!-- Création de la navbar fixed top -->
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
     <img id="ShoesAddictedIcon" src="assets/images/computericon.png" alt="logo" />
-    <a class="navbar-brand brandText" href="#"> ShoesAddicted </a>
+    <a class="navbar-brand brandText" href="#"> Custom Computer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,12 +34,12 @@
       <ul class="navbar-nav mr-auto">
         <!-- Création dropdown pour les produits -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">LA BOUTIQUE</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Le Shop</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" id="navAll" href="#shopName" ng-click="catFilter = ''">Toutes les marques</a>
-            <a class="dropdown-item" id="navAdidas" href="#shopName" ng-click="catFilter = 'Adidas'">Adidas</a>
-            <a class="dropdown-item" id="navNike" href="#shopName" ng-click="catFilter = 'Nike'">Nike</a>
-            <a class="dropdown-item" id="navPuma" href="#shopName" ng-click="catFilter = 'Puma'">Puma</a>
+            <a class="dropdown-item" id="navAdidas" href="#shopName" ng-click="catFilter = 'Adidas'">Processeurs</a>
+            <a class="dropdown-item" id="navNike" href="#shopName" ng-click="catFilter = 'Nike'">Cartes Graphiques</a>
+            <a class="dropdown-item" id="navPuma" href="#shopName" ng-click="catFilter = 'Puma'">Disques Durs</a>
           </div>
         </li>
         <li class="nav-item">
@@ -50,7 +50,7 @@
         </li>
       </ul>
       <span class="navbar-text">
-        <a class="nav-link" href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-arrow-circle-right"></i> {{totalQty()}} Shoes <i class="fas fa-shopping-cart"></i></a><!-- Panier ouvrant le modal -->
+        <a class="nav-link" href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-arrow-circle-right"></i> {{totalQty()}} Equipements <i class="fas fa-shopping-cart"></i></a><!-- Panier ouvrant le modal -->
       </span>
     </div>
   </nav> <!-- fin de la navbar -->
@@ -122,18 +122,18 @@
   <!--Fin container entre image et nous-->
   <div class="container nous" id="weAre">
     <h1>Qui sommes nous ?</h1>
-    <p>ShoesAddicted est tout simplement le site de référence de la sneakers</p>
-    <p>L'idée de base était de faire découvrir et vendre les plus beaux modèle de sneakers existants sur la boule bleu.</p>
-    <p>Conçu et développé par 3 amis passionnés de la chaussure en tout genre, nous avons décidé de faire de notre passion un métier à part entière.</p>
-    <p>Après de nombreuses années à chercher les perles rares chacun de notre coté, nous avons décidé de mettre en commun nos connaissances pour chercher, trouver et vous vendre les sneakers les plus "bankable" de la planète sneakers.</p>
-    <p>Sur notre <strong>site</strong>, vous trouverez les modèles de chaussures les plus prisés, à des prix incroyables!</p>
+    <p>Custom Computer est la référence des produits pc dans le monde !</p>
+    <p>Le concept est de vous proposer les meilleurs nouveautés possible concernant les composants pc pour toujours être à la page.</p>
+    <p>Passionnés d'informatique, nous cherchons a vous proposer le meilleur service possible en terme de proposition, de vente, de montage et de service après vente.</p>
+    <p>Après de nombreuses années à chercher les perles rares chacun de notre coté, nous avons décidé de mettre en commun nos connaissances pour chercher, trouver et vous vendre les composants les plus "HYPE" de la planète informatique.</p>
+    <p>Sur notre <strong>site</strong>, vous trouverez tous les composants les plus prisés, à des prix incroyables!</p>
     <p><strong>Faites confiance à une équipe de passionnés !</strong></p>
   </div><!-- Fin de la div class nous -->
 
   <!-- div de transition -->
   <div class="container parallax01 text-center align-middle"></div>
 
-  <div class="container-fluid text-center align-middle" id="shopName"><p>La Boutique</p></div>
+  <div class="container-fluid text-center align-middle" id="shopName"><p>Le Shop</p></div>
 
   <div class="container-fluid flexing">
     <div ng-repeat="model in products | filter: {prodCat: catFilter}" ng-grid><!-- début de div ng-repeat pour conserver proportion -->
