@@ -2,13 +2,10 @@ body {
   font-family: 'Pavanam', sans-serif;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: #05121B;
+  background-color: #ae9b71;
 }
 
 /*Gestion des CARDS ___________________________________________________________________________*/
-.badge {
-  background-color: grey;
-}
 
 .badge img {
   max-width: 57px;
@@ -55,14 +52,14 @@ body {
 }
 
 .nous {
-  background-color: #05121B;
-  color: #BBB0B4;
+  background-color: #ae9b71;
+  color: #0f0607;
   padding-top: 100px;
   padding-bottom: 10px;
 }
 
 #shopName{
-  color : #BBB0B4;
+  color : #0f0607;
   font-size: 4em;
   font-weight: bolder;
 }
@@ -75,7 +72,7 @@ body {
 .paymentOptions{
   font-size: 0.9em;
   text-align: center;
-  color: #BBB0B4;
+  color: #0f0607;
 }
 
 .payLogos {
@@ -147,12 +144,12 @@ body {
 .titleContact {
   font-size: 4em;
   text-align: center;
-  color: #BBB0B4;
+  color: #0f0607;
 }
 
 .footLi {
   font-size: 1.5em;
-  color: #BBB0B4;
+  color: #0f0607;
   margin: 12px;
   text-align: center;
   list-style: none;
@@ -163,5 +160,5 @@ body {
 }
 
 .footLi a {
-  color: #BBB0B4;
+  color: #0f0607;
 }

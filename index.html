@@ -133,7 +133,7 @@
   <!-- div de transition -->
   <div class="container-fluid parallax02 text-center align-middle"></div>
 
-  <div class="container-fluid text-center align-middle" id="shopName"><p>La Boutique</p></div>
+  <div class="container-fluid text-center align-middle" id="shopName"><p>Le Shop</p></div>
 
   <div class="container-fluid flexing">
     <div ng-repeat="model in products | filter: {prodCat: catFilter}" ng-grid><!-- début de div ng-repeat pour conserver proportion -->
@@ -146,7 +146,7 @@
           <p>{{model.prodPrice | currency: '€'}}</p>
           <p class="card-text ref prodRef">Ref: {{model.prodRef}}</p>
           <a href="#{{model.prodName}}" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-class="desc" data-trigger="focus">Description du produit</a>
-          <button ng-init="model.qtyCart" ng-click="addItem(model)" type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button ng-init="model.qtyCart" ng-click="addItem(model)" type="button" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#exampleModal">
             Ajouter au panier
           </button>
         </div>
