@@ -139,7 +139,7 @@
     <div ng-repeat="model in products | filter: {prodCat: catFilter}" ng-grid><!-- début de div ng-repeat pour conserver proportion -->
       <!--Card avec ng-repeat dessus-->
       <div class="card"><!-- debut div card-->
-        <span class="badge badge-light"><img src="{{model.prodLogo}}" alt="logo" /></span>
+        <span class="badge badge-light"><p>{{model.prodCat}}</p></span>
         <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
         <div class="card-body">
           <p class="card-text prodName">{{model.prodName}}</p>
