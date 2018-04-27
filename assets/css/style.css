@@ -79,14 +79,29 @@ body {
 /*Parallax*____________________________________________________________________________________/
 /* The image used */
 .parallax01{
-  background-image: url('../images/bg_footwear.jpg');
+  background-image: url('../images/oldies.jpg');
   padding-top: 100px;
   height: 700px;
-  max-width: 4096px;
-  font-size: 3em;
-  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-/* Create the parallax scrolling effect */
+.parallax02{
+  background-image: url('../images/hdd.jpg');
+  padding-top: 100px;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax03{
+  background-image: url('../images/network.jpg');
+  padding-top: 100px;
+  height: 700px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
