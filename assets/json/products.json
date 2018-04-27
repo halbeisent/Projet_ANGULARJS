@@ -31,7 +31,7 @@
   },
   {
     "prodRef": "WDBUZG5000ABK",
-    "prodName": "Western Digital Elements - 500 Go",
+    "prodName": "Western Digital - 500 Go",
     "prodDesc": "Sauvegardez et transportez facilement tous vos fichiers, photos, vidéos avec ce disque dur externe WD Elements !",
     "prodCat": "hdd",
     "prodPrice": 63,
@@ -51,7 +51,7 @@
   },
   {
     "prodRef": "GV-N107TAORUS-8GD",
-    "prodName": "Gigabyte GTX 1070Ti AORUS - 8 Go ",
+    "prodName": "Gigabyte GTX 1070Ti - 8 Go ",
     "prodDesc": "Découvrez la carte graphique haut de gamme Gigabyte GTX 1070 Ti Aorus ! Destinée à truster les podiums de la performance, la GTX 1070 Ti débarque avec fracas et va faire défiler les FPS en haute définition et en 4K ! La carte graphique GTX 1070 Ti construite autour de la nouvelle architecture NVIDIA Pascalaffiche des caractéristiques extrêmes qui feront le bonheur de tous les joueurs PC avides de performances ! Soyez prêts pour le futur du jeu et pour la Réalité Virtuelle !",
     "prodCat": "gpu",
     "prodPrice": 560,
@@ -61,7 +61,7 @@
   },
   {
     "prodRef": "11276-00-40G",
-    "prodName": " Sapphire Radeon RX Vega 56 Limited Edition - 8G",
+    "prodName": " Sapphire Radeon RX Vega - 8 Go",
     "prodDesc": "Avec la Sapphire Nitro+ Radeon RX Vega 56 Limited Edition, les cartes graphiques équipées en Vega 56 personnalisées arrivent ! Le savoir-faire de la marque s'exprime via l'overclocking d'usine, le refroidissement custom et sa chambre à vapeur lui permettant d'offrir une fréquence boostée jusqu'à 1611 MHz. Une expérience de jeu extrême vous attend !",
     "prodCat": "gpu",
     "prodPrice": 710,
@@ -71,7 +71,7 @@
   },
   {
     "prodRef": "11265-09-20G",
-    "prodName": "Sapphire Radeon RX 580 Pulse OC - 4 Go",
+    "prodName": "Sapphire Radeon RX580 - 4 Go",
     "prodDesc": "Voici les nouvelles cartes graphiques AMD Radeon RX 580 (11265-09) ! Sapphire nous présente ici sa nouvelle Radeon RX 580 Pulse OC 4 Go ! Cette RX 580 haut de gamme de la gamme RX série 500 débarque avec un double refroidissement exclusif Sapphire  Dual-X encore plus efficace et plus silencieux !",
     "prodCat": "gpu",
     "prodPrice": 340,
@@ -81,7 +81,7 @@
   },
   {
     "prodRef": "BX80673I97980X",
-    "prodName": "Intel Core i9 7980XE Extreme Edition",
+    "prodName": "Intel Core i9 7980XE",
     "prodDesc": "Avec la génération de processeurs Skylake X, Intel met à votre disposition une architecture ultra-moderne et puissante, de quoi se régaler avec des possibilités d'overclocking. Profitez d'une plateforme technologique haute performance grâce à une finesse de gravure 14 nanomètres, une fréquence mémoire DDR4 revue à la hausse (2666 MHz) et une rapidité en mode turbo toujours plus élevée.",
     "prodCat": "cpu",
     "prodPrice": 1950,
